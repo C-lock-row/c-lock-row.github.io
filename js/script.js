@@ -1,5 +1,5 @@
 // ハンバーガーメニューのopen/close
-$(".hum-icon").on("click", function() {
+$(".hum-icon").on("touchstart click", function() {
   $(".nav-pc").toggleClass("hum-open");
 });
 
@@ -89,7 +89,7 @@ setInterval(function() {
 
 // portraitのときのmember-pタグ削除(自己紹介長い人用)
 if (height > width) {
-  var descriptionArray = ["takedasuzu", "kazu", "ans"];
+  var descriptionArray = ["takedasuzu", "kazu", "ans","cawawa"];
   for (var i = 0; i < descriptionArray.length; i++) {
     var description = $("." + descriptionArray[i] + " p").text();
     $("." + descriptionArray[i]).text(description);
